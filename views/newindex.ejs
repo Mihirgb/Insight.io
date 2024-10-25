@@ -1,0 +1,74 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="\css\newstyle.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sono:wght@300&display=swap" rel="stylesheet">
+ 
+     <title>Interview Experience System</title>
+ </head>
+ <body>
+    
+ 
+         <section id="contact" class="footer_wrapper mt-3 mt-md-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 newsletter text-center px-4">
+                        <div>
+                            <h1 class="text-white"><a class="text-white" href="/" style="text-decoration: none; font-family: 'Rubik', sans-serif;">
+                                Interview Experiences
+                            </a>
+                                </h1>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+ 
+
+ <main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <a href="/newlogin" class="main-btn primary-btn mt-4"style="text-decoration:none" style="color: white">
+                <span class="text-gradient" style="color: white;">Add Your Experience <i class="fas fa-plus"></i></span>
+            </a>
+        </div>
+        
+<!-- <div class="row"> -->
+
+
+
+        <!-- form handling -->
+        <form action="/" > 
+            
+        <!-- </div> -->
+            <table class="table">
+                <thead class="thead " style="background-color: #4458dc; color: white;">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Company</th>
+                        <th>Interview type</th>
+                        <th>See Here</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%- include('include/show') %>
+                    
+                    
+                </tbody>
+            </table>
+        </form>
+        <!-- <%=users %> -->
+    </div>
+</main>
+ <%- include('include/footer') %>
+ 
