@@ -4,7 +4,7 @@
  const bodyparser=require(`body-parser`); 
  const bcrypt=require('bcryptjs')
  const User =require('./server/model/user')
- const path=require(`Path`);
+ const path=require('path');
  const session = require('express-session');
  var expressValidator = require('express-validator');
  const connectDB = require('./server/database/connection');
