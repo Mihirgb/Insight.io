@@ -17,6 +17,7 @@ app.use(expressValidator());
  app.use(morgan(`tiny`));
  connectDB();
  app.use(bodyparser.urlencoded({extended: true}))
+ app.set("views", __dirname + "/views");
  app.set("view engine","ejs")
  app.engine('html', require('ejs').renderFile);
  app.use('/css', express.static(path.resolve(__dirname, "assets/css")))
