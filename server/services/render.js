@@ -45,6 +45,10 @@ exports.profile =(req,res)=>{
 exports.about =(req,res)=>{
     res.render('about');
 }
+exports.site=(req,res)=>{
+
+    res.render('site');
+}
 exports.features =(req,res)=>{
     res.render('features');
 }

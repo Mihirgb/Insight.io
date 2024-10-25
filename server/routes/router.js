@@ -32,6 +32,7 @@ route.get('/add-user', services.add_user)
 route.get('/update-user', services.update_user)
 route.get('/codeditor',services.codeditor)
 route.get('/codesite',services.codesite)
+route.get('/site',services.site)
 // API
 route.post('/api/users', controller.create);
 route.get('/api/users', controller.find);
